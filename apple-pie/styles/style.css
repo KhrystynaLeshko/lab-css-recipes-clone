@@ -1,0 +1,91 @@
+@import ul(
+  "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap"
+);
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 3em;
+}
+
+/* Main heading */
+
+.backgroundImg {
+  height: 100vh;
+  width: 100vw;
+}
+h1 {
+  font-size: 70px;
+  color: whitesmoke;
+  position: absolute;
+  top: 5em;
+  left: 8em;
+}
+
+/* Recipe info section */
+
+.recipeInfo {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.recipeInfoText {
+  font-size: 30px;
+  text-align: center;
+  width: 75%;
+}
+.recipeInfo hr {
+  margin: 20px auto 30px auto;
+  width: 70%;
+}
+
+/* Ingredients section */
+
+.ingredients {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.ingredients ul {
+  list-style-type: "-";
+}
+.ingredientsText {
+  line-height: 1.5em;
+  margin-left: -500px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.ingredients hr {
+  margin: 20px auto 30px auto;
+  width: 70%;
+}
+
+/* Directions section */
+
+.directions {
+  height: 400px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin-left: 220px;
+  margin-top: 20px;
+  line-height: 1.5em;
+}
+.directions ol {
+  counter-reset: list;
+  width: 70%;
+}
+.directions ol > li {
+  list-style: none;
+}
+.directions ol > li:before {
+  content: counter(list) ") ";
+  counter-increment: list;
+}
